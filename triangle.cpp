@@ -1,6 +1,11 @@
-#  include <GL/freeglut.h>
+# include <GL/freeglut.h>
+# include <iostream>
+
+using namespace std;
 
 void render(void);
+void keyboard(unsigned char c, int x, int y);
+void mouse(int button, int state, int x, int y);
 
 
 int main(int argc, char** argv) {
@@ -12,19 +17,40 @@ int main(int argc, char** argv) {
 	glutCreateWindow("Simple Example Glut App");
 
 	glutDisplayFunc(render);
+	glutKeyboardFunc(keyboard);
+	glutMouseFunc(mouse);
 
 	glutMainLoop();
 }
 
+
 void render(void) {
+
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	glBegin(GL_TRIANGLES);
-		glColor3f(1, 0, 0);
+		glColor3f(1, 1, 1);
 		glVertex2f(-0.5, -0.5);
 		glVertex2f(0.5, -0.5);
 		glVertex2f(0.0, 0.5);
 	glEnd();
 
 	glutSwapBuffers();
+}
+
+
+void keyboard(unsigned char c, int x, int y) {
+
+	if (c == 27) {
+		exit(0);
+	}
+}
+
+
+void mouse(int button, int state, int x, int y) {
+
+	if (button == GLUT_RIGHT_BUTTON) {
+
+	}
+	
 }
