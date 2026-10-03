@@ -1,11 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
 #include <GL/glut.h>
-#include <iostream>
-#include <cmath>
-#include <iostream>
-#include <cmath>
 GLfloat xRotated, yRotated, zRotated;
 GLdouble radius = 1;
 

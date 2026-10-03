@@ -35,12 +35,6 @@
  * OpenGL(R) is a registered trademark of Silicon Graphics, Inc.
  */
 
- /*
-  * smooth.c
-  * This program demonstrates smooth shading.
-  * A smooth shaded polygon is drawn in a 2-D projection.
-  */
-
 #ifdef __APPLE__
 #  include <GLUT/glut.h>
 #else
@@ -48,19 +42,14 @@
 #endif
 
 #include <stdlib.h>
-  /* This program illustrates the use of the glut library for
-  interfacing with a Window System */
-
-  /* The program opens a window, clears it to black,
-  then draws a box at the location of the mouse each time the
-  left button is clicked. The right button exits the program
-
-  The program also reacts correctly when the window is
-  moved or resized by clearing the new window to black*/
-
-
 #include <time.h>
-#include <stdlib.h>
+
+/* This program illustrates the use of the glut library for
+   interfacing with a window system. The program opens a window,
+   clears it to black, then draws a box at the location of the
+   mouse each time the left button is clicked. The right button
+   exits the program. The program also reacts correctly when the
+   window is moved or resized by clearing the new window to black. */
 
 
   /* globals */

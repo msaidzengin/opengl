@@ -16,12 +16,13 @@
 #include <cmath>
 #include <iostream>
 
-
-#  include <GL/glew.h>
-#  include <GL/freeglut.h>
-#  include <GL/freeglut_ext.h>
-#  include <GL/glext.h>
-#pragma comment(lib, "glew32.lib") 
+#include <GL/glew.h>
+#include <GL/freeglut.h>
+#include <GL/freeglut_ext.h>
+#include <GL/glext.h>
+#ifdef _MSC_VER
+#pragma comment(lib, "glew32.lib")
+#endif 
 
 #define PI 3.14159265
 

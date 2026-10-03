@@ -1,8 +1,10 @@
 /*
  * OGL01Shape3D.cpp: 3D Shapes
  */
-#include <windows.h>  // for MS Windows
-#include <GL/glut.h>  // GLUT, include glu.h and gl.h
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <GL/glut.h>
 
  /* Global variables */
 char title[] = "3D Shapes";

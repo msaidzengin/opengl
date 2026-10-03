@@ -1,8 +1,4 @@
 #include <GL/glut.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <iostream>
-using namespace std;
 
 GLfloat xRotated, yRotated, zRotated;
 

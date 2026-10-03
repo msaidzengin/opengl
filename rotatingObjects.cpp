@@ -1,17 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
-#include <GL/glut.h>
-#include <iostream>
-#include <cmath>
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-#include <iostream>
-#include <stdlib.h>
-#include <math.h>
-#include<GL/gl.h>
 #include <GL/glut.h>
 
 //Initializes 3D rendering

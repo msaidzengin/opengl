@@ -1,4 +1,4 @@
-#include <GL\glut.h>
+#include <GL/glut.h>
 
 GLfloat xRotated, yRotated, zRotated;
 GLdouble radius = 1;

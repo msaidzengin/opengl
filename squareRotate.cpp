@@ -1,7 +1,4 @@
-#include <stdlib.h>			// standard definitions
-
-#include <stdio.h>			// C I/O (for sprintf) 
-#include <math.h>			// standard definitions
+#include <math.h>
 
 #ifdef __APPLE__
 #  include <GLUT/glut.h>

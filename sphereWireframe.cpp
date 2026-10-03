@@ -1,8 +1,5 @@
 #include <GL/glut.h>
 #include <stdlib.h>
-#include <stdio.h>
-#include <iostream>
-using namespace std;
 
 GLfloat tdist = 0.0;
 
@@ -18,11 +15,10 @@ void menu(int selection)
 
 
 /* geometry display list names */
-enum { SPHERE = 1, FLOOR, WALLS };
+enum { SPHERE = 1 };
 
 void drawscene(void)
 {
-    GLfloat i;
     glPushMatrix();
 
     glTranslatef(10.f, -10.f, -400.f);
@@ -64,7 +60,6 @@ void redraw(void)
 void key(unsigned char key, int x, int y)
 {
     switch (key) {
-        cout << key << "\n";
     case 't':
         if (tdist < 140.0) {
             tdist = (tdist + 0.5);
@@ -83,11 +78,8 @@ void key(unsigned char key, int x, int y)
 }
 int main(int argc, char** argv) {
 
-    GLfloat* tex;
     static GLfloat lightpos[] = { -50.f, -50.f, -320.f, 1.f };
     static GLfloat sphere_mat[] = { 0.0, 1.0, 1.0, 1.0 };
-
-    GLUquadricObj* sphere;
 
     glutInit(&argc, argv);
     glutInitWindowSize(700, 700);

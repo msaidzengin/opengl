@@ -1,9 +1,11 @@
 /*
  * GL07BouncingBall.cpp: A ball bouncing inside the window
  */
-#include <windows.h>  // for MS Windows
-#include <GL/glut.h>  // GLUT, includes glu.h and gl.h
-#include <Math.h>     // Needed for sin, cos
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <GL/glut.h>
+#include <math.h>
 #define PI 3.14159265f
 
  // Global variables
